@@ -7,7 +7,7 @@ export default function MealItem({meal}) {
     const cartCtx = useContext(CartContext);
     const PATH = "http://localhost:3000/";
 
-    function handleAddMealToCart(meal) {
+    function handleAddMealToCart() {
         cartCtx.addItem(meal);
     }
 
