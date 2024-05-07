@@ -29,6 +29,8 @@ export default function Cart() {
                     name={item.name}
                     price={item.price}
                     quantity={item.quantity}
+                    onDecrease={()=> cartCtx.removeItem(item.id)}
+                    onIncrease={()=> cartCtx.addItem(item)}
                 />
             ))}
         </ul>
